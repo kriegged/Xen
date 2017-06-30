@@ -1,0 +1,10 @@
+builder = "hvm"
+name = "name-of-hvm"
+memory = "RAM-in-MB"
+vcpus = 1
+vif = ['bridge=xenbr0']
+#disk = ['phy:/dev/SysXen01-vg/LVM-name,hda,w','file:/etc/xen/isos/OS-Install.iso,hdc:cdrom,r']
+disk = ['phy:/dev/SysXen01-vg/LVM-name,hda,w']
+vnc = 1
+#boot="dc"
+boot="c"
